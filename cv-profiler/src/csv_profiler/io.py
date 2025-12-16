@@ -1,17 +1,12 @@
-#a={"city":"madina","temp_c": 30 ,"is_weekend":"yah"}
-#print(a.values())
-
-row= [{"age":35, "city":""},
-      {"age":"", "city":"madina"}
-]
-
-missing={"age":0, "city":0}
-for i in row:
-    for key in i:
-        if i[key]=="":
-            missing[key]= 1 
+from __future__ import annotations
+from pathlib import Path
+from csv import DictReader
 
 
-            
-print(row)
-print(missing)
+
+def read_csv_rows(path:str|Path ) -> list[dict[str,str]]:
+    path = Path(path)
+    with path.open(newline='', encoding='utf-8') as f:
+        reader = DictReader(f)
+        return [dict(row) for row in reader]
+
