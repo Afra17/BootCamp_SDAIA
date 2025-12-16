@@ -43,8 +43,6 @@ def numeric_stats(values: list[str]) -> dict:
     mean = sum(nums) / count if count > 0 else None
     max_val = max(nums) if nums else None
     min_val = min(nums) if nums else None
-    top = Counter(nums).most_common(1)
-    top_list = [{"value": top[0][0], "count": top[0][1]}] if top else []
 
     return {
         "count": count,
@@ -53,25 +51,27 @@ def numeric_stats(values: list[str]) -> dict:
         "mean": mean,
         "min": min_val,
         "max": max_val,
-        "top": top_list
     }
 
+def by_count(pair):
+    return pair[1]
 
-def text_stats(values: list[str]) -> dict:
+def text_stats(values: list[str],top_k: int=5) -> dict:
     usable = [v for v in values if not is_missing_value(v)]
     missing = len(values) - len(usable)
 
     counts: dict[str, int] = {}
     for v in usable:
         counts[v] = counts.get(v, 0) + 1
-    top_items = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)
+    top_items = sorted(counts.items(), key=lambda kv: kv[1], reverse=True) [:top_k]# sort by count from small to laege
     top=[{  "value": v, "count": c} for v, c in top_items]
 
     return{
-
-
+        
         "count": len(usable),
         "missing": missing,
+        "top": top,
+
     }
     
 
@@ -105,7 +105,6 @@ def basic_profile(rows : list[dict[str,str]]) -> dict:
         
         if col_type == "numeric":
             stats = numeric_stats(col_values)
-            top_key = stats["top"][0] if stats["top"] else None
             profile["columns"][col] = {
                 "count": stats["count"],
                 "missing": stats["missing"],
@@ -114,16 +113,14 @@ def basic_profile(rows : list[dict[str,str]]) -> dict:
                 "mean": stats["mean"],
                 "min": stats["min"],
                 "max": stats["max"],
-                "top_key": top_key
-            }
+      }
         else:
-            count = len(col_values)
+            stats = text_stats(col_values)
             unique = len(set(col_values))
-            top = Counter(col_values).most_common(1)
-            top_key = {"value": top[0][0], "count": top[0][1]} if top else None
+            top_key = stats["top"][0] if stats["top"] else None
             profile["columns"][col] = {
-                "count": count,
-                "missing": missing[col],
+                "count": stats["count"],
+                "missing": stats["missing"],
                 "unique": unique,
                 "type": col_type,
                 "top_key": top_key
