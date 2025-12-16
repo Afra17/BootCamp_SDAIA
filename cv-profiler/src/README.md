@@ -18,6 +18,6 @@ uv pip install -r requirements.txt
 python main.py path/to/your/file.csv
 
 ## You can specify where to save the reports using --output_dir:
-python main.py path/to/your/file.csv --output_dir my_reports
+python main.py path/to/your/file.csv --output-dir my_reports
 
 
