@@ -7,9 +7,9 @@ git clone https://github.com/Afra17/BootCamp_SDAIA
 
 cd BootCamp_SDAIA
 
-## 2. Create virtual env 
+## 2.1 Create virtual env 
 uv venv
-
+## 2.2 Activate environment
 .venv\Scripts\activate
 
 ## 3. Install dependencies
