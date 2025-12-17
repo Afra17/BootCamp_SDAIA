@@ -9,7 +9,8 @@ cd BootCamp_SDAIA
 
 ## 2. Create virtual env 
 uv venv
-source .venv/bin/activate 
+
+.venv\Scripts\activate
 
 ## 3. Install dependencies
 uv pip install -r requirements.txt
