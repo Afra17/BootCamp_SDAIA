@@ -1,9 +1,9 @@
-from collections import Counter
 import pandas as pd
-
+import typer 
 
 
 non_list=["","na","n/a","null","none","nan"]
+
 def is_missing_value(value:str|None) -> bool:
     if value is None:
         return True
@@ -67,16 +67,13 @@ def text_stats(values: list[str],top_k: int=5) -> dict:
     top=[{  "value": v, "count": c} for v, c in top_items]
 
     return{
-        
+
         "count": len(usable),
         "missing": missing,
         "top": top,
 
     }
     
-
-
-
 def basic_profile(rows : list[dict[str,str]]) -> dict:
     if not rows:
         return {"rows":0, "columns":{},"notes":["empty dataset"]}

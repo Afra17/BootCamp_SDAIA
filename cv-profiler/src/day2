@@ -1,4 +1,8 @@
+import pandas as pd 
+
+
 non_list=["","na","n/a","null","none","nan"]
+
 
 def is_missing_value(value:str|None) -> bool:
     if value is None:
@@ -37,4 +41,3 @@ def test_stats(value:list[str], top_n:int=3) -> dict:
 reslut=test_stats(list_)
 print(reslut)
 
-    

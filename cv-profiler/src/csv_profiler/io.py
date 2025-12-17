@@ -10,3 +10,6 @@ def read_csv_rows(path:str|Path ) -> list[dict[str,str]]:
         reader = DictReader(f)
         return [dict(row) for row in reader]
 
+
+
+

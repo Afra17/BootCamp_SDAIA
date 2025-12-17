@@ -48,7 +48,5 @@ person3=Person("Bob",20)
 
    
 def __eq__(self, other: object) -> bool:
-    if not isinstance(other, Person):
-        return NotImplemented
     return self.name == other.name and self.age == other.age
 
