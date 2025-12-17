@@ -3,7 +3,7 @@ Follow these instructions to set up and run the project.
 
 
 ## 1. Clone the repo
-' git clone https://github.com/Afra17/BootCamp_SDAIA '
+''git clone https://github.com/Afra17/BootCamp_SDAIA''
 
 'cd BootCamp_SDAIA'
 
