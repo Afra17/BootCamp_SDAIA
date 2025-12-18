@@ -19,9 +19,13 @@ uv venv
 
 uv pip install -r requirements.txt
 
-## 4. Run 
+## 4. Run your csv file
 
 python main.py path/to/your/file.csv
+
+if you want to use me csv file: (RUN)
+
+python main.py data/sample.py
 
 ## You can specify where to save the reports using --output_dir:
 
@@ -43,3 +47,19 @@ If you prefer an interactive visual interface running locally on your machine:
 streamlit run streamlit_main.py
 
 
+
+BootCamp_SDAIA/
+├── csv_profiler/    
+|    ├── src/
+|       ├── data
+|       ├── main.py  
+|       ├── csv_profiler/
+|           ├── __init__.py
+|           ├── cli.py
+|           ├── io.py
+|           ├── profile.py
+|           └── render.py
+|              
+|              
+├── requirements.txt    
+└── README.md           
