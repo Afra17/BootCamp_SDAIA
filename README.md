@@ -56,6 +56,17 @@ If you prefer an interactive visual interface running locally on your machine:
 </div>
 
 
+### Option 2: Live Cloud Version (Streamlit Cloud)
+If you want to try the app immediately without installing anything on your machine, click the link below:
+
+https://bootcampsdaia-kwk28rphvteyvhxivgjp5w.streamlit.app/
+
+
+[IMPORTANT!] Note on Performance: Since the backend is hosted on a free tier (Render), the server "sleeps" when inactive.
+When you click "Generate Report" for the first time, it might take up to 1 minute for the server to wake up and respond. Thank you for your patience! ⏳
+
+
+
 
 BootCamp_SDAIA/
 ├── csv_profiler/    
