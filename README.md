@@ -50,7 +50,8 @@ If you prefer an interactive visual interface running locally on your machine:
 
 <h1>📊 CSV Profiler Dashboard</h1>
 
-<br> <img src="C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\bootcamp\streamlit.image.png"  width="700">
+<br> 
+<img src="streamlit.image.png" width="700">
 
 </div>
 
