@@ -66,24 +66,26 @@ https://bootcampsdaia-kwk28rphvteyvhxivgjp5w.streamlit.app/
 When you click "Generate Report" for the first time, it might take up to 1 minute for the server to wake up and respond. Thank you for your patience! ⏳
 
 
+##  Project Structure
 
+```text
 BootCamp_SDAIA/
 ├── cv_profiler/
-│   ├── BACKEND.py              # Backend logic and processing
-│   ├── .gitignore              # Git ignored files
-│   ├── requirements.txt        # Project dependencies
+│   ├── BACKEND.py
+│   ├── .gitignore
+│   ├── requirements.txt
 │   ├── src/
-│   │   ├── data/               # Sample or processed data
-│   │   ├── FRONTEND.py         # Frontend logic (UI handling)
-│   │   ├── main.py             # Main execution entry point
-│   │   ├── streamlit_main.py   # Streamlit application entry point
+│   │   ├── data/
+│   │   ├── FRONTEND.py
+│   │   ├── main.py
+│   │   ├── streamlit_main.py
 │   │   └── csv_profiler/
 │   │       ├── __init__.py
-│   │       ├── cli.py           # Command-line interface
-│   │       ├── io.py            # Data input/output handling
-│   │       ├── profile.py       # Core profiling logic
-│   │       └── render.py        # Report rendering and visualization
-│   └── __pycache__/             # Cached Python files
-│
-└── README.md                    # Project documentation
-      
+│   │       ├── cli.py
+│   │       ├── io.py
+│   │       ├── profile.py
+│   │       └── render.py
+│   └── __pycache__/
+└── README.md
+```
+
