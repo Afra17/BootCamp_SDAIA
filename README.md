@@ -17,7 +17,7 @@ uv venv
 
 ## 3. Install dependencies
 
-uv pip install -r requirements.txt
+`uv pip install -r requirements.txt`
 
 ## 4. Run your csv file
 
@@ -45,7 +45,7 @@ If you prefer an interactive visual interface running locally on your machine:
 
 ```bash
 streamlit run streamlit_main.py
-
+```
 
 
 BootCamp_SDAIA/
