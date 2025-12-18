@@ -1,0 +1,44 @@
+{
+  "total_rows": 3,
+  "total_columns": 4,
+  "columns": {
+    "name": {
+      "count": 3,
+      "missing": 0,
+      "unique": 2,
+      "type": "text",
+      "top_key": {
+        "value": "afra",
+        "count": 2
+      }
+    },
+    " age": {
+      "count": 3,
+      "missing": 0,
+      "unique": 3,
+      "type": "numeric",
+      "mean": 37.666666666666664,
+      "min": 23.0,
+      "max": 50.0
+    },
+    "city": {
+      "count": 3,
+      "missing": 0,
+      "unique": 2,
+      "type": "text",
+      "top_key": {
+        "value": "madina",
+        "count": 2
+      }
+    },
+    "salary": {
+      "count": 2,
+      "missing": 0,
+      "unique": 1,
+      "type": "numeric",
+      "mean": 4000.0,
+      "min": 4000.0,
+      "max": 4000.0
+    }
+  }
+}

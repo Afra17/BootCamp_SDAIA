@@ -28,7 +28,7 @@ def write_markdown(report:dict, path:str|Path) -> None:
     if numeric_cols:
         lines.append(f"## Numeric Columns\n")
         lines.append(f"| Column Name | Count | Missing | Unique | Mean | Min | Max  |")
-        lines.append(f"|-------------|-------|---------|--------|------|-----|-----|-----------------|")
+        lines.append(f"|-------------|-------|---------|--------|------|-----|------|")
         for c in numeric_cols:
             col_data = columns.get(c, {})
             count = col_data.get("count", 0)

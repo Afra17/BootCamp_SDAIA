@@ -1,0 +1,6 @@
+typer
+pandas
+streamlit
+fastapi
+python-multipart
+uvicorn
