@@ -56,7 +56,7 @@ If you prefer an interactive visual interface running locally on your machine:
 </div>
 
 
-### Option 2: Live Cloud Version (Streamlit Cloud)
+### 🔹 Option 2: Live Cloud Version (Streamlit Cloud)
 If you want to try the app immediately without installing anything on your machine, click the link below:
 
 https://bootcampsdaia-kwk28rphvteyvhxivgjp5w.streamlit.app/
@@ -67,19 +67,23 @@ When you click "Generate Report" for the first time, it might take up to 1 minut
 
 
 
-
 BootCamp_SDAIA/
-├── csv_profiler/    
-|    ├── src/
-|       ├── data
-|       ├── main.py  
-|       ├── csv_profiler/
-|           ├── __init__.py
-|           ├── cli.py
-|           ├── io.py
-|           ├── profile.py
-|           └── render.py
-|              
-|              
-├── requirements.txt    
-└── README.md           
+├── cv_profiler/
+│   ├── BACKEND.py              # Backend logic and processing
+│   ├── .gitignore              # Git ignored files
+│   ├── requirements.txt        # Project dependencies
+│   ├── src/
+│   │   ├── data/               # Sample or processed data
+│   │   ├── FRONTEND.py         # Frontend logic (UI handling)
+│   │   ├── main.py             # Main execution entry point
+│   │   ├── streamlit_main.py   # Streamlit application entry point
+│   │   └── csv_profiler/
+│   │       ├── __init__.py
+│   │       ├── cli.py           # Command-line interface
+│   │       ├── io.py            # Data input/output handling
+│   │       ├── profile.py       # Core profiling logic
+│   │       └── render.py        # Report rendering and visualization
+│   └── __pycache__/             # Cached Python files
+│
+└── README.md                    # Project documentation
+      
