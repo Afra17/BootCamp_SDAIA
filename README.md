@@ -46,6 +46,15 @@ If you prefer an interactive visual interface running locally on your machine:
 `streamlit run streamlit_main.py`
 
 
+    <div align="center">
+
+    <h1>📊 CSV Profiler Dashboard</h1>
+
+    <br> <img src="C:\Users\user\OneDrive - University of Prince Mugrin\سطح المكتب\bootcamp\streamlit.image.png"  width="700">
+
+    </div>
+
+
 
 BootCamp_SDAIA/
 ├── csv_profiler/    
