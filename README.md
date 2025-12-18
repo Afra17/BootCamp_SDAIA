@@ -43,9 +43,8 @@ If you prefer an interactive visual interface running locally on your machine:
 1. Ensure you have completed the **Installation steps (1-3)** above.
 2. Run the following command:
 
-```bash
-streamlit run streamlit_main.py
-```
+`streamlit run streamlit_main.py`
+
 
 
 BootCamp_SDAIA/
