@@ -14,7 +14,7 @@ st.title("📊 CSV Profiler")
 st.write("Analyze and profile your CSV files to generate comprehensive data quality reports")
 
 # Backend API URL
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "https://bootcamp-sdaia.onrender.com"
 
 # File upload
 st.subheader("📁 Step 1: Upload CSV File")
