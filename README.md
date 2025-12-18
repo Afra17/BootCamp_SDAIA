@@ -4,16 +4,16 @@ Follow these instructions to set up and run the project.
 
 ## 1. Clone the repo
 
-git clone https://github.com/Afra17/BootCamp_SDAIA
+`git clone https://github.com/Afra17/BootCamp_SDAIA`
 
-cd BootCamp_SDAIA
+`cd BootCamp_SDAIA`
 
 ## 2.1 Create virtual env 
 
-uv venv
+`uv venv`
 ## 2.2 Activate environment
 
-.venv\Scripts\activate
+`.venv\Scripts\activate`
 
 ## 3. Install dependencies
 
@@ -21,15 +21,15 @@ uv venv
 
 ## 4. Run your csv file
 
-python main.py path/to/your/file.csv
+`python main.py path/to/your/file.csv`
 
 if you want to use me csv file: (RUN)
 
-python main.py data/sample.py
+`python main.py data/sample.py`
 
 ## You can specify where to save the reports using --output_dir:
 
-python main.py path/to/your/file.csv --output-dir my_reports
+`python main.py path/to/your/file.csv --output-dir my_reports`
 
 # Streamlit (UI)
 
